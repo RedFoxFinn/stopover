@@ -33,7 +33,8 @@
     "lint": "eslint --fix .",
     "cm": "git-cz",
     "electron-build": "electron-builder",
-    "release": "yarn standard-version && yarn react-build && electron-builder --publish=always",
+    "versioning": "standard-version",
+    "release": "yarn cm && standard-version && yarn react-build && electron-builder --publish=always",
     "build": "yarn react-build && yarn electron-build",
     "start": "concurrently \"cross-env BROWSER=none yarn react-start\" \"wait-on http://localhost:3000 && electron .\""
   },
