@@ -30,7 +30,6 @@
     "react-start": "react-scripts start",
     "react-build": "react-scripts build",
     "react-test": "react-scripts test",
-    "react-eject": "react-scripts eject",
     "lint": "eslint --fix .",
     "cm": "git-cz",
     "electron-build": "electron-builder",

@@ -1,7 +1,16 @@
+
+// Author:    RedFoxFinn
+// Project:   Stopover
+// File:      index.js
+
+// imports
+
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Stopover from './Stopover';
 import reportWebVitals from './reportWebVitals';
+
+// render on html page as element 'root'
 
 ReactDOM.render(
   <React.StrictMode>
