@@ -50,8 +50,7 @@ module.exports = {
       'requiredFirst': true,
       'sortShapeProp': true,
       'noSortAlphabetically': false
-    }],
-    'react/jsx-equals-spacing': [2, 'always']
+    }]
   },
   'settings': {
     'react': {
