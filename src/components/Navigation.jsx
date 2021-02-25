@@ -16,7 +16,7 @@ import {
 import Configuration from './Configuration';
 import FourOFour from './FourOFour';
 import Root from './Root';
-import StopTimeList from './StopTimeList';
+import StopList from './StopList';
 
 // declarations
 
@@ -27,7 +27,7 @@ const Routes = () => {
     <Route exact path='/' render={(props) => <Root {...props} />} />
     <Route path='/configure' render={(props) => <Configuration {...props} />} />
     <Route path='/404' render={(props) => <FourOFour {...props}/>} />
-    <Route path='/stoptimes' render={(props) => <StopTimeList {...props} data={true}/>}/>
+    <Route path='/stoptimes' render={(props) => <StopList {...props} data={true}/>}/>
   </Switch>;
 };
 

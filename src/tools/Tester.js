@@ -11,10 +11,10 @@ export const TEST_ENTRY = Object.freeze({
   code: 'H1234',
   stoptimesWithoutPatterns: [
     {
-      scheduledArrival: 64200,
-      realtimeArrival: 64000,
-      scheduledDeparture: 64200,
-      realtimeDeparture: 64100,
+      scheduledArrival: 81200,
+      realtimeArrival: 81000,
+      scheduledDeparture: 81200,
+      realtimeDeparture: 81000,
       realtime: true,
       realtimeState: 'UPDATED',
       serviceDay: 1613685600,
