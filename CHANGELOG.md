@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.6.0](///compare/v0.5.4...v0.6.0) (2021-03-16)
+
+
+### ⚠ BREAKING CHANGES
+
+* due function updates and new internal dependencies, old language based text
+provision won't work with Text -tools headee -functionality.
+
+### Features
+
+* text tool header edited & test updated: function now relies on PackageInfo -tool 570b6f8
+
 ### [0.5.4](///compare/v0.5.3...v0.5.4) (2021-03-16)
 
 
