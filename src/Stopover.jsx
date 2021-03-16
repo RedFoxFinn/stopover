@@ -22,7 +22,7 @@ const Stopover = () => {
   const lang = LocalStorageHandler.checkLang();
   return <article style={Style.platform()}>
     <Header lang={lang}/>
-    <Navigation/>
+    <Navigation lang={lang}/>
     <Footer lang={lang}/>
   </article>;
 };

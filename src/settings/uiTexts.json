@@ -1,0 +1,28 @@
+{
+  "navigation": {
+    "configure": {
+      "en": "Configure",
+      "fi": "Asetukset"
+    },
+    "footer": {
+      "en": "Footer",
+      "fi": "Alaotsikko"
+    },
+    "header": {
+      "en": "Header",
+      "fi": "Otsikko"
+    },
+    "home": {
+      "en": "Home",
+      "fi": "Etusivu"
+    },
+    "stoptimes": {
+      "en": "Stoptimes",
+      "fi": "Aikataulut"
+    }
+  },
+  "messages": {
+    "error": {},
+    "success": {}
+  }
+}
