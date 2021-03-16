@@ -10,6 +10,8 @@ import React from 'react';
 import Footer from './components/Footer';
 import Header from './components/Header';
 import Navigation from './components/Navigation';
+import Style from './tools/Style';
+import LocalStorageHandler from './tools/LocalStorageHandler';
 
 // declarations
 
@@ -17,10 +19,11 @@ import Navigation from './components/Navigation';
 // and provides the very base layout of the application
 
 const Stopover = () => {
-  return <article>
-    <Header/>
+  const lang = LocalStorageHandler.checkLang();
+  return <article style={Style.platform()}>
+    <Header lang={lang}/>
     <Navigation/>
-    <Footer/>
+    <Footer lang={lang}/>
   </article>;
 };
 
