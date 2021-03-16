@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.5.0](///compare/v0.4.0...v0.5.0) (2021-03-16)
+
+
+### ⚠ BREAKING CHANGES
+
+* **text tool:** removing Text.<function>.text will cause texts to disappear. Functions provide
+texts for the application and more texts will be provided by it in the later development phases.
+
+### Features
+
+* **text tool:** added text providing tool to application 0bac364
+
 ## [0.4.0](///compare/v0.3.0...v0.4.0) (2021-02-25)
 
 
