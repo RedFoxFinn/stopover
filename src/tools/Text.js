@@ -1,12 +1,9 @@
 
 import uiTexts from '../settings/uiTexts.json';
+import PackageInfo from './PackageInfo';
 
 const header = (lang = 'en') => {
-  switch (lang) {
-  case 'fi': return {text: uiTexts.navigation.header.fi.toString(), lang: lang};
-  case 'en': return {text: uiTexts.navigation.header.en.toString(), lang: lang};
-  default: return {text: uiTexts.navigation.header.en.toString(), lang: 'en'};
-  }
+  return {text: PackageInfo.applicationName(), lang: lang};
 };
 
 const footer = (lang = 'en') => {

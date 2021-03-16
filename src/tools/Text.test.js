@@ -5,6 +5,7 @@ import uuid from 'uuid';
 
 import Text from './Text';
 import uiTexts from '../settings/uiTexts.json';
+import packageInfo from '../../package.json';
 
 describe('unit tests - Text - header', () => {
   let dummy = false;
@@ -13,25 +14,13 @@ describe('unit tests - Text - header', () => {
     dummy = true;
     expect(dummy).toBe(true);
   });
-  it('header - eng ->> default', () => {
-    const engHeader = Text.header('eng').text;
-    expect(engHeader).toMatch(uiTexts.navigation.header.en.toString());
-  });
-  it('header - en', () => {
-    const enHeader = Text.header('en').text;
-    expect(enHeader).toMatch(uiTexts.navigation.header.en.toString());
-  });
-  it('header - default', () => {
-    const defaultHeader = Text.header().text;
-    expect(defaultHeader).toMatch(uiTexts.navigation.header.en.toString());
-  });
-  it('header - fin ->> default', () => {
-    const finHeader = Text.header('fin').text;
-    expect(finHeader).toMatch(uiTexts.navigation.header.en.toString());
-  });
-  it('header - fi', () => {
-    const fiHeader = Text.header('fi').text;
-    expect(fiHeader).toMatch(uiTexts.navigation.header.fi.toString());
+  it('unit tests - Text - header', () => {
+    const expectation = () => {
+      const name = packageInfo.name.toString();
+      const appName = name.charAt(0).toUpperCase() + name.slice(1);
+      return appName;
+    };
+    expect(Text.header().text).toMatch(expectation());
   });
 });
 
