@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.5.4](///compare/v0.5.3...v0.5.4) (2021-03-16)
+
+
+### Features
+
+* **package info tool:** added tool that provides package information for application UI 82f105b
+
 ### [0.5.3](///compare/v0.5.2...v0.5.3) (2021-03-16)
 
 
