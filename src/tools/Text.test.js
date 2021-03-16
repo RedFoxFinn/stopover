@@ -53,7 +53,7 @@ describe('unit tests - Text - footer', () => {
   });
 });
 
-describe('unit tests - Text - home', () => {
+describe('unit tests - Text - navigation - home', () => {
   let dummy = false;
   it('dummy', () => {
     expect(dummy).toBe(false);
@@ -82,7 +82,7 @@ describe('unit tests - Text - home', () => {
   });
 });
 
-describe('unit tests - Text - configure', () => {
+describe('unit tests - Text - navigation - configure', () => {
   let dummy = false;
   it('dummy', () => {
     expect(dummy).toBe(false);
@@ -111,7 +111,7 @@ describe('unit tests - Text - configure', () => {
   });
 });
 
-describe('unit tests - Text - stoptimes', () => {
+describe('unit tests - Text - navigation - stoptimes', () => {
   let dummy = false;
   it('dummy', () => {
     expect(dummy).toBe(false);
@@ -137,5 +137,34 @@ describe('unit tests - Text - stoptimes', () => {
   it('stoptimes - fi', () => {
     const fiStoptimes = Text.stoptimes('fi').text;
     expect(fiStoptimes).toMatch(uiTexts.navigation.stoptimes.fi.toString());
+  });
+});
+
+describe('unit tests - Text - home - intro', () => {
+  let dummy = false;
+  it('dummy', () => {
+    expect(dummy).toBe(false);
+    dummy = true;
+    expect(dummy).toBe(true);
+  });
+  it('intro - eng ->> default', () => {
+    const engIntro = Text.intro('eng').text;
+    expect(engIntro).toMatch(uiTexts.home.intro.en.toString());
+  });
+  it('intro - en', () => {
+    const enIntro = Text.intro('en').text;
+    expect(enIntro).toMatch(uiTexts.home.intro.en.toString());
+  });
+  it('intro - default', () => {
+    const defaultIntro = Text.intro().text;
+    expect(defaultIntro).toMatch(uiTexts.home.intro.en.toString());
+  });
+  it('intro - fin ->> default', () => {
+    const finIntro = Text.intro('fin').text;
+    expect(finIntro).toMatch(uiTexts.home.intro.en.toString());
+  });
+  it('intro - fi', () => {
+    const fiIntro = Text.intro('fi').text;
+    expect(fiIntro).toMatch(uiTexts.home.intro.fi.toString());
   });
 });

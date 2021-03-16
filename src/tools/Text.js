@@ -38,6 +38,19 @@ const stoptimes = (lang = 'en') => {
   }
 };
 
+const intro = (lang = 'en') => {
+  switch (lang) {
+  case 'fi': return {text: uiTexts.home.intro.fi.toString(), lang: lang};
+  case 'en': return {text: uiTexts.home.intro.en.toString(), lang: lang};
+  default: return {text: uiTexts.home.intro.en.toString(), lang: 'en'};
+  }
+};
+
 export default {
-  configure, footer, header, home, stoptimes
+  configure,
+  footer,
+  header,
+  home,
+  intro,
+  stoptimes
 };

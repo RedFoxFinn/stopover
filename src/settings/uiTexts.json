@@ -8,10 +8,6 @@
       "en": "Footer",
       "fi": "Alaotsikko"
     },
-    "header": {
-      "en": "Header",
-      "fi": "Otsikko"
-    },
     "home": {
       "en": "Home",
       "fi": "Etusivu"
@@ -22,7 +18,16 @@
     }
   },
   "messages": {
-    "error": {},
+    "error": {
+      "en": "Something went wrong...",
+      "fi": "Jokin on vialla..."
+    },
     "success": {}
+  },
+  "home": {
+    "intro": {
+      "en": "Stopover is an application to display time remaining before next bus, ferry, metro, train or tram will arrive to your favorite stop, platform or station.",
+      "fi": "Stopover on sovelma, joka näyttää jäljellä olevan ajan seuraavaksi saapuville kulkuneuvoille omilta suosikkipysäkeiltä, -asemilta tai -laitureilta."
+    }
   }
 }

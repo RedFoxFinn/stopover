@@ -7,14 +7,16 @@
 
 import React, {} from 'react';
 
+import Text from '../tools/Text';
+
 // declarations
 
 // Root is component that will render applications landing page
 // on route '/'
 
-const Root = () => {
+const Root = ({lang}) => {
   return <article>
-    <p>i am root</p>
+    <p>{Text.intro(lang).text}</p>
   </article>;
 };
 
